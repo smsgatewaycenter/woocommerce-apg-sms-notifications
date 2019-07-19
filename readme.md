@@ -1,5 +1,6 @@
-Forked to include SMS Gateway Center API.
+# Forked to include SMS Gateway Center API.
 
+# New SMS API Included
  * [SMS Gateway Center](http://www.smsgateway.center/)
 
 

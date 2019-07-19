@@ -26,4 +26,4 @@ Añade a tu tienda WooCommerce notificaciones SMS a tus clientes cuando cambie e
 
 Forked to include SMS Gateway Center API.
 
- * [BulkSMS](http://www.smsgateway.center/)
+ * [SMS Gateway Center](http://www.smsgateway.center/)

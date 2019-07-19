@@ -20,6 +20,7 @@ function apg_sms_prefijo( $servicio ) {
 		"smscountry",
 		"smsdiscount", 
 		"smslane",
+		"smsgatewaycenter",
 		"springedge",		
 		"twilio", 
 		"twizo",

@@ -134,6 +134,10 @@ function apg_sms_envia_sms( $apg_sms_settings, $telefono, $mensaje ) {
 			 );
 			$respuesta = wp_remote_post( "http://smslane.com/vendorsms/pushsms.aspx", $argumentos );
 			break;
+		case "smsgatewaycenter":
+			//supports unicode messages
+			$respuesta = wp_remote_get( "https://www.smsgateway.center/SMSApi/rest/send?userId=" . $apg_sms_settings['usuario_smsgatewaycenter'] . "&password=" . $apg_sms_settings['contrasena_smsgatewaycenter'] . "&mobile=" . $telefono . "&sendMethod=simpleMsg&msgType=dynamic&senderId=" . $apg_sms_settings['identificador_smsgatewaycenter'] . "&msg=" . apg_sms_codifica_el_mensaje( $mensaje )  . "&format=json");
+			break;
 		case "solutions_infini":
 			$respuesta = wp_remote_get( "http://alerts.sinfini.com/api/web2sms.php?workingkey=" . $apg_sms_settings['clave_solutions_infini'] . "&to=" . $telefono . "&sender=" . $apg_sms_settings['identificador_solutions_infini'] . "&message=" . apg_sms_codifica_el_mensaje( $mensaje ) );
 			break;
